@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 반복문
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 0;//초기값
+
+            while (i <= 200) //조건
+            { 
+                Console.Write(i+" ");
+                i = i + 1;
+            }
+        }
+    }
+}
