@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Enumtext
+{
+    class Program
+    {
+        enum DigtalResult { Yes, No, Cancel, confirm, ok }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(DigtalResult.Yes);
+            Console.WriteLine((int)DigtalResult.Yes);
+
+            Console.WriteLine(DigtalResult.ok);
+            Console.WriteLine((int)DigtalResult.ok);
+                ;
+        
+        }
+    }
+}
