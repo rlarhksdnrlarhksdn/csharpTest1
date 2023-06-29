@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace stringAPP002
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // ToLower,ToUpper 대문자 소문자 변경
+            Console.WriteLine($"{"ABC".ToLower()}");
+            Console.WriteLine($"{"abc".ToUpper()}");
+
+            // Insert , Remove 넣기 빼기
+            Console.WriteLine($"Happy Friday".Insert(5," Sunny"));
+            Console.WriteLine($"I Don't Love you".Remove(2,6));
+
+            //Trim 공백 제거
+            Console.WriteLine("   ABC   ");
+            Console.WriteLine("   ABC   ".Trim());
+        }
+    }
+}
