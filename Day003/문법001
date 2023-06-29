@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace @string
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string greeting = "good morning";
+
+            Console.WriteLine(greeting);
+            Console.WriteLine();
+
+            //Indexof 이단어가 언제 시작하니
+            Console.WriteLine($"{greeting.IndexOf("morning")}");
+            Console.WriteLine($"{greeting.IndexOf("d")}");
+
+            //Last IndexOf 마지막으로 이단어가 어디있니?
+            Console.WriteLine($"{greeting.LastIndexOf("good")}");
+            Console.WriteLine($"{greeting.LastIndexOf("o")}");
+
+            //StartWith() 이단어로 시작하니?
+            Console.WriteLine($"StartWith;{greeting.StartsWith("good")}");
+            Console.WriteLine($"StartWith;{greeting.StartsWith("morning")}");
+
+            //endswith 이단어로 끝나니?
+            Console.WriteLine($"EndsWith;{greeting.EndsWith("good")}");
+            Console.WriteLine($"EndsWith;{greeting.EndsWith("morning")}");
+
+            //contains() 이단어가 있니?
+            Console.WriteLine($"contains Evening;{greeting.Contains("Evening")}");
+            Console.WriteLine($"contains Evening;{greeting.Contains("morning")}");
+
+            //Replace() 혹시 모닝이 있다면 이브닝으로 바꿔라
+            Console.WriteLine($"Replace Evening;{greeting.Replace("Evening","morning")}");
+
+        }
+    }
+}
