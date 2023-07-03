@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Method_Quiz
+{
+    internal class Program
+    {
+        static int plus(int a, int b)
+        {
+            int result1 = a + b;
+            return result1;
+        }
+        static int Minus(int a, int b)
+        {
+            int result2 = a - b;
+            return result2;
+        }
+        static int multiple(int a, int b)
+        {
+            int result3 = a * b;
+            return result3;
+        }
+        static double dvide(double a, double b)
+        {
+            double result4 = a / b;
+            return result4;
+        }
+
+        static void Main(string[] args)
+        {
+            int number1 = int.Parse(Console.ReadLine());
+            int number2 = int.Parse(Console.ReadLine());
+
+            int result1, result2, result3;
+            double result4;
+
+            result1 = plus(number1, number2);
+            result2 = Minus(number1, number2);
+            result3 = multiple(number1, number2);
+            result4 = dvide (number1, number2);
+
+            Console.WriteLine(result1);
+            Console.WriteLine(result2);
+            Console.WriteLine(result3);
+            Console.WriteLine(result4);
+
+        }
+
+
+    }
+}
