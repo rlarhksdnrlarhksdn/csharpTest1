@@ -1,0 +1,9 @@
+SQL 
+
+C(create) insert 삽입
+R(Read) Select 조회
+U(update) Update 업데이트
+D(delete) Delete 삭제
+
+Port : 1521
+SID : Xe
