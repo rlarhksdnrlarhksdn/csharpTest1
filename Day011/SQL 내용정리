@@ -7,3 +7,29 @@ D(delete) Delete 삭제
 
 Port : 1521
 SID : Xe
+
+SQL*Plus: Release 11.2.0.2.0 Production on 화 7월 11 13:47:11 2023
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+SQL> conn system                                                                                                        
+Enter password:                                                                                                         
+Connected.                                                                                                              
+SQL> ALTER USER hr ACCOUNT UNLOCK;
+                                                                                                                                                                                                              
+User altered.
+                                                                                                                                                                                                                  
+SQL> alter user hr identified by hr;
+                                                                                                                                                                                                            
+User altered.
+                                                                                                                                                                                                                                  
+SQL> commit;
+                                                                                                                                                                                                                                    
+Commit complete.
+                                                                                                                                                                                                                                
+SQL> conn hr
+                                                                                                            
+Enter password:
+                                                                                                        
+Connected.
+                                                                                                              
+SQL>
+   
