@@ -1,0 +1,39 @@
+# 복습
+SELECT * FROM EMP;
+# ENAME 과 JOb , SAL 를 출력하되 SAL 기준으로 오름차순 정리
+SELECT ENAME, JOB, SAL FROM EMP
+ORDER BY SAL DESC;
+# 부서 테이블을 조회해주세요.
+SELECT * FROM DEPT;
+SELECT * FROM DEPARTMENTS;
+SELECT DISTINCT MGR FROM EMP; 
+
+#월급(SAL) 12를 곱하여 '연봉' 컬럼을 만들어주세요.
+SELECT ENAME AS 이름, SAL 월급, SAL*12 As 연봉, NVL(COMM,0) FROM EMP;
+
+# 부서 번호가 30번인 부서원의 모든정보
+SELECT * FROM EMP
+WHERE DEPTNO = 30;
+
+SELECT * FROM EMP
+WHERE EMPNO = 7782;
+
+# 두서 번호가 30번 이면서 직업이 SALESMAN인 직원들은?
+SELECT * FROM EMP
+WHERE DEPTNO =30 AND JOB = 'SALESMAN';
+
+# 사원번호가 7499 부서번호가 30 인 사원정보는?
+SELECT * FROM EMP
+WHERE EMPNO = 7499 AND DEPTNO = 30;
+
+#부서번호가 30, 또는 직업이 'CLERK'인 사원정보는?
+SELECT * FROM EMP
+WHERE DEPTNO =30 OR JOB = 'CLERK';
+
+#급여가 2000이상인 사원정보는?
+SELECT * FROM EMP
+WHERE SAL >= 2000;
+
+# 급여가 2500 이상이고 직업이 ANALYST인 사원정보는
+SELECT * FROM EMP
+WHERE SAL >= 2500 AND JOB = 'ANALYST';
