@@ -1,0 +1,52 @@
+# 자신의 주민등록번호를 넣고 연도와 생일을 뽑아낸다.
+SELECT SUBSTR ('990803-1111111',1,6)AS 주민번호,
+SUBSTR ('990803-1111111',1,2)AS 연도,
+SUBSTR ('990803-1111111',3,4)AS 생일 FROM DUAL;
+
+#LPAD, RPAD 데이터의 빈공간을 채우는 함수
+SELECT 'ORACLE',
+LPAD('ORACLE', 10, '#'),
+RPAD('ORACLE', 10, '*'),
+LPAD('ORACLE', 10),
+RPAD('ORACLE', 10)
+FROM DUAL;
+
+#LPAD, RPAD 응용
+#RPAD를 이용하여 주민번호 뒷자리를 *로 표시하기
+SELECT RPAD('971225-',14,'*'),
+       RPAD('010-1234-',13,'#')
+FROM DUAL;
+
+#문자열 2개를 붙여 주세요. '7788' 'SCOTT'
+SELECT CONCAT('7788','SCOTT') FROM DUAL;
+SELECT CONCAT(EMPNO,ENAME) FROM EMP;
+#문자열 가장 많이 사용
+SELECT '7788'|| ':' || 'SCOTT' FROM DUAL;
+
+#TRIM 공백 제거
+SELECT TRIM('    HELLO    ') FROM DUAL;
+
+#P146 ROUND 반올림 해주는 함수
+SELECT ROUND (3.141592),
+       ROUND (3.141592,1),
+       ROUND (3.141592,2),
+       ROUND (3.141592,3)
+FROM DUAL;
+
+#TRUNC 버림함수
+SELECT TRUNC(1234.5678),
+       TRUNC(1234.5678,1),
+       TRUNC(1234.5678,2),
+       TRUNC(1234.5678,3)
+FROM DUAL;
+
+# 지정한 숫자와 가장 가까운 정수 찾는 함수 CEIL(올리기), FLOOR(내리기)
+SELECT CEIL(3.14),FLOOR(3.14),
+       CEIL(-3.14),FLOOR(-3.14)
+FROM DUAL;
+
+# 나머지를 구하는 연산자 MOD
+SELECT MOD(15,6),
+       MOD(10,2),
+       MOD(11,2)
+FROM DUAL;
