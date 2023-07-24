@@ -1,0 +1,30 @@
+C# 파일처리 프로그래밍
+
+os, .net Core ==> C#을 사용할 수 있다.
+
+클래스 사용
+
+File           파일의 생성, 복사, 삭제, 이동, 조회 등을 처리
+
+FileInfo      File 클래스와 하는 일이 동일하지만 정적 메소드 대신
+                Instance 메소드 제공
+
+Directory    디렉터리 생성, 삭제, 이동, 조회 (정적 메소드)
+
+Directory Instance     메소드 제공
+
+P623
+파일의 기능          File           FileInfo            Directory          Directory Info
+    생성              Create()       Create()      CreateDirectory()         Create()
+    복사               Copy()        CopyTo()                -                        -
+    삭제              Delete()       Delete()            Delete()            Delete()    
+    이동               Move()        MoveTo()             Move()             MoveTo()
+
+존재여부                              Exists()              Exists              Eixists()             Exists
+속성조회                        GetAttributes()           Attributes          GetAttributes()       Attributes
+하위 디렉터리 조회                   -                      -                GetDirectories()     GetDirectories()
+하위 파일 조회                         -                      -                GetFiles()           GetFiles() 
+
+
+
+
