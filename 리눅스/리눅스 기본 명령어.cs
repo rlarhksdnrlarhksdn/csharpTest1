@@ -17,3 +17,12 @@ pi@raspberrypi ~/worksapce $ ls
 pi@raspberrypi ~/worksapce $ cd
 pi@raspberrypi ~ $
 
+이동(잘라내기 & 붙여 넣기)
+pi@raspberrypi ~ $ mv sample.txt ./workspace 
+pi@raspberrypi ~ $ ls
+pi@raspberrypi ~ $ cd workspace
+pi@raspberrypi ~/workspace $ ls
+
+이름 변경
+pi@raspberrypi ~/workspace $ mv sample.txt s.txt
+pi@raspberrypi ~/workspace $ ls
